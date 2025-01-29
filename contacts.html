@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Контакты</title>
+    <link rel="icon" href="images/icons/dog_logo.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_contacts.css" />
+    <script
+      src="https://kit.fontawesome.com/259cbf6f55.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Блок HEADER -->
+
+    <button onclick="topFunction()" id="myBtn" title="Наверх">&#10514;</button>
+
+    <div class="info__test">САЙТ РАБОТАЕТ В ТЕСТОВОМ РЕЖИМЕ</div>
+    <header class="header">
+      <div class="container">
+        <div class="header__menu">
+          <a href="../dogs__training/index.html" class="header__menu__logo">
+            <img
+              src="images/logo.png"
+              alt="logo_training_dogs"
+              class="header__logo"
+            />
+          </a>
+
+          <input type="checkbox" id="menu-toggle" />
+          <label id="menu-button" class="menu-button" for="menu-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <div id="site-menu">
+            <ul id="site-menu-titles" class="header__menu__nav__list">
+              <a href="../dogs__training/index.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Главная</p>
+                </li>
+              </a>
+              <a href="../dogs__training/team.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>О нас</p>
+                </li>
+              </a>
+              <a href="../dogs__training/all_courses.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Наши курсы</p>
+                </li>
+              </a>
+              <a href="../dogs__training/blog.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Блог</p>
+                </li>
+              </a>
+              <a href="../dogs__training/contacts.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Контакты</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__info">
+          <div class="header__text">
+            <h2 class="header__text__title">
+              Экспертное решение в воспитании собаки
+            </h2>
+            <div class="header__text_desc">
+              За 5,5 месяцев научитесь содержать и разводить собак,
+              корректировать нежелательное поведение питомцев, дрессировать и
+              готовить их к выставкам.
+            </div>
+            <a href="../dogs__training/contacts.html" class="header__btn shine"
+              >Оставить заявку</a
+            >
+          </div>
+
+          <div class="header__dog">
+            <img src="images/title_friendly_dog2.png" alt="title__image" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Конец блока HEADER -->
+
+    <section class="contacts ">
+      <div class="contacts__container container">
+        <div class="contacts__wrapper">
+          <a href="+375292829988" class="contacts__link">
+            <div class="contacts__icons">
+              <i class="fa-solid fa-phone contacts__icons_pic"></i>
+            </div>
+            <div class="contacts__info">
+              <h5>Телефон</h5>
+              <span>+375292829988</span>
+            </div>
+          </a>
+
+          <a href="viber://chat?number=%2B375292829988" class="contacts__link">
+            <div class="contacts__icons">
+              <i class="fa-brands fa-viber contacts__icons_pic"></i>
+            </div>
+            <div class="contacts__info">
+              <h5>Viber</h5>
+              <span>+375292829988</span>
+            </div>
+          </a>
+
+          <a href="mailto:dog_training@mail.gov" class="contacts__link">
+            <div class="contacts__icons">
+              <i class="fa-regular fa-envelope contacts__icons_pic"></i>
+            </div>
+            <div class="contacts__info">
+              <h5>Почта</h5>
+              <span>dog_training@mail.gov</span>
+            </div>
+          </a>
+
+          <a href="viber://chat?number=%2B375292829988" class="contacts__link">
+            <div class="contacts__icons">
+              <i class="fa-solid fa-location-dot contacts__icons_pic"></i>
+            </div>
+            <div class="contacts__info">
+              <h5><span>Наш адрес</span></h5>
+              <span>г. Минск, ул.Притыцкого, 87</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contacts__form_contact">
+          <h2 class="h2__title">Связаться с нами</h2>
+          <span>
+            Заполните форму ниже и мы свяжемся с вами в самое ближайшее время
+          </span>
+          <form class="contacts__form">
+            <div class="contacts__form_name contacts__flex_form">
+              <label for="contacts__name_user">Ваше имя </label>
+              <input
+                type="text"
+                name="name_user"
+                id="contacts__name_user"
+                placeholder="Фамилия, имя"
+              />
+            </div>
+
+            <div class="contacts__form_email contacts__flex_form">
+              <label for="contacts__email_user">Ваша электронная почта </label>
+              <input
+                type="email"
+                name="email_user"
+                id="contacts__email_user"
+                placeholder="name@example.com"
+                minlength="5"
+                maxlength="25"
+                pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                title="Пожалуйста, введите действующий электронный адрес."
+                required
+              />
+            </div>
+
+            <div class="contacts__form_textarea contacts__flex_form">
+              <label for="contacts__user_message">Ваше сообщение </label>
+              <textarea
+                name="user_message"
+                id="contacts__user_message"
+                rows="10"
+                cols="84"
+                placeholder="Ваше сообщение"
+              ></textarea>
+            </div>
+          </form>
+          <button onclick="sendMessage()" class="contacts__send_btn shine">
+            Отправить
+          </button>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.472782526029!2d27.445865476994918!3d53.90557413273354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdad446cd64df%3A0xe9019abb6bc1f0a7!2z0YPQuy4g0J_RgNC40YLRi9GG0LrQvtCz0L4gODcsINCc0LjQvdGB0LosINCc0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sby!4v1724131602710!5m2!1sru!2sby"
+          width="100%"
+          height="650"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- подписаться на рассылку -->
+    <section class="subscribe">
+      <div class="subscribe__container container">
+        <div class="subscribe__wrapper">
+          <h4 class="subscribe__title">
+            Расскажем, как научить собаку чему угодно
+          </h4>
+          <p class="subscribe__text">
+            Присылаем полезные письма и даем промокоды, которых больше нигде не
+            найти. В первом письме пришлем <span>гайд</span> «Как научить собаку
+            чему угодно» и <span>подарим 1000 ₽ на покупку курса</span>.
+          </p>
+          <div class="subscribe__form">
+            <input
+              type="email"
+              class="subscribe__input__email"
+              placeholder="name@example.com"
+              id="subscribe__input_email"
+              minlength="5"
+              maxlength="25"
+              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+              title="Пожалуйста, введите действующий электронный адрес."
+              required
+            />
+
+            <button class="subscribe__input__button" onclick="subscribe()">
+              Подписаться
+            </button>
+          </div>
+          <p class="subscribe__text__agreement">
+            Нажимая на кнопку, вы даете согласие на получение наших писем и
+            соглашаетесь c
+            <a href="html/policy.html" class="subscribe__text__agreement__link"
+              >политикой конфиденциальности</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- подписаться на рассылку -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">Курсы</h6>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Обучение щенков</div>
+            </a>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Защитно-караульная служба</div>
+            </a>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Общий курс дрессировки</div>
+            </a>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Городская собака</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">О нас</h6>
+            <a href="../dogs__training/team.html">
+              <div class="footer__link">Команда</div>
+            </a>
+            <a href="../dogs__training/blog.html">
+              <div class="footer__link">Блог</div>
+            </a>
+            <a href="../dogs__training/contacts.html">
+              <div class="footer__link">Контакты</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">Полезные ссылки</h6>
+            <a href="../dogs__training/policy.html">
+              <div class="footer__link">Политика конфиденциальности</div>
+            </a>
+            <a href="../dogs__training/user_agreement.html">
+              <div class="footer__link">Пользовательское соглашение</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">Мы в социальных сетях</h6>
+
+            <a href="https://vk.com">
+              <div class="footer__link footer__soc_media">
+                <div class="footer__soc_media__icon">
+                  <i class="fa-brands fa-vk"></i>
+                </div>
+                <div class="footer__soc_media__text">Вконтакте</div>
+              </div>
+            </a>
+
+            <a href="https://instagram.com" class="">
+              <div class="footer__link footer__soc_media">
+                <div class="footer__soc_media__icon">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div class="footer__soc_media__text">Instagram</div>
+              </div>
+            </a>
+
+            <a href="https://web.telegram.org/">
+              <div class="footer__link footer__soc_media">
+                <div class="footer__soc_media__icon">
+                  <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="footer__soc_media__text">Telegram</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__sign">
+        Copyright &#169; 2024 All rights reserved | This template is made with
+        <i class="fa-solid fa-heart" style="color: #c3ecf0"> </i> by Eugene
+      </div>
+    </footer>
+
+    <!-- Конец блока FOOTER -->
+
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

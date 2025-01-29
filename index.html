@@ -1,19 +1,554 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classwork</title>
-    <link rel="icon" href="images/elephant.avif" />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Школа воспитания собак</title>
+    <link rel="icon" href="../dogs__training/images/icons/dog_logo.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/259cbf6f55.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <p>My first project</p>
-    <div class="test2">
-      это для теста 2: создание дива
-    </div>
+    <!-- Блок HEADER -->
 
-    <div class="test3">
-      тест 3: создание еще одного дива и создание style.css
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Наверх">&#10514;</button>
+
+    <div class="info__test">САЙТ РАБОТАЕТ В ТЕСТОВОМ РЕЖИМЕ</div>
+    <header class="header">
+      <div class="container">
+        <div class="header__menu">
+          <a href="../dogs__training/index.html" class="header__menu__logo">
+            <img
+              src="images/logo.png"
+              alt="logo_training_dogs"
+              class="header__logo"
+            />
+          </a>
+
+          <input type="checkbox" id="menu-toggle" />
+          <label id="menu-button" class="menu-button" for="menu-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <div id="site-menu">
+            <ul id="site-menu-titles" class="header__menu__nav__list">
+              <a href="../dogs__training/index.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Главная</p>
+                </li>
+              </a>
+              <a href="../dogs__training/team.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>О нас</p>
+                </li>
+              </a>
+              <a href="../dogs__training/all_courses.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Наши курсы</p>
+                </li>
+              </a>
+              <a href="../dogs__training/blog.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Блог</p>
+                </li>
+              </a>
+              <a href="../dogs__training/contacts.html" target="_blank">
+                <li class="header__menu__nav__item">
+                  <p>Контакты</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__info">
+          <div class="header__text">
+            <h2 class="header__text__title">
+              Экспертное решение в воспитании собаки
+            </h2>
+            <div class="header__text_desc">
+              За 5,5 месяцев научитесь содержать и разводить собак,
+              корректировать нежелательное поведение питомцев, дрессировать и
+              готовить их к выставкам.
+            </div>
+            <a href="../dogs__training/contacts.html" class="header__btn shine"
+              >Оставить заявку</a
+            >
+          </div>
+
+          <div class="header__dog">
+            <img src="images/title_friendly_dog2.png" alt="title__image" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Конец блока HEADER -->
+
+    <!-- Блок наши преподаватели -->
+
+    <section class="teacher padding">
+      <div class="teacher__container container">
+        <div class="title_btn__info">
+          <h2 class="h2__title">Наши преподаватели</h2>
+          <a href="../dogs__training/team.html" class="main__link__btn shine">
+            Все преподаватели
+          </a>
+        </div>
+
+        <!-- Слайдер -->
+
+        <div class="teacher__wrapper">
+          <div class="teacher__card">
+            <p class="teacher__card__info">
+              <span>
+                Мы специалисты по адаптации и дрессировке собак. В работе
+                используем только гуманные методы — без удушения, рывков и
+                ругани. Отрицаем теорию доминирования и необходимость
+                выстраивать иерархию в общении с собакой.
+              </span>
+
+              <span> Проводим онлайн-курсы, семинары и консультации. </span>
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <input type="radio" name="point" id="slide1" checked />
+            <input type="radio" name="point" id="slide2" />
+            <input type="radio" name="point" id="slide3" />
+            <input type="radio" name="point" id="slide4" />
+            <input type="radio" name="point" id="slide5" />
+
+            <div class="slider">
+              <div class="slide slide1"></div>
+              <div class="slide slide2"></div>
+              <div class="slide slide3"></div>
+              <div class="slide slide4"></div>
+              <div class="slide slide5"></div>
+            </div>
+
+            <div class="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+              <label for="slide5"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок наши преподаватели -->
+
+    <!-- Блок индивидуального сопровождения -->
+
+    <section class="ads_banner padding">
+      <div class="ads_banner__container container">
+        <div class="ads_banner__info">
+          <h2 class="h2__title">Индивидуальное сопровождение</h2>
+          <div class="ads_banner__text">
+            <p>
+              Месячная подписка на работу с куратором по любым вопросам. Куратор
+              составит индивидуальный план и поможет в его реализации.
+            </p>
+
+            <p>
+              Расписание настроим под личный график, а в процессе скорректируем,
+              если что-то будет получаться медленнее или быстрее.
+            </p>
+
+            <a href="../dogs__training/all_courses.html" class="shine">
+              Подробнее
+            </a>
+
+            <p class="ads_banner__text">
+              <span class="ads_banner__italic">Осталось 4 места</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="ads_banner__image">
+          <img src="images/ads_banner.jpg" alt="ads_teacher" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Конец блока индивидуального сопровождения -->
+
+    <!-- Блок все курсы -->
+
+    <section class="courses padding">
+      <div class="container">
+        <div class="title_btn__info">
+          <h2 class="h2__title">Наши курсы</h2>
+          <a href="../dogs__training/all_courses.html" class="shine">
+            Все курсы
+          </a>
+        </div>
+        <p class="courses__about_text">
+          В нашем центре вы подберете нужный вид дрессировки для своей собаки, а
+          также получите всю необходимую консультацию по интересующему вас
+          вопросу.
+        </p>
+        <div class="courses__container">
+          <div class="courses__wrapper">
+            <div class="courses__container__cards">
+              <div class="courses__card__image">
+                <img src="images/picture01.jpg" alt="1" />
+              </div>
+              <a
+                href="../dogs__training/html/courses/dresirovka_schenkov.html"
+                class="courses__card__info"
+              >
+                <p class="courses__card__text">Воспитание <span>щенка</span></p>
+                <p class="courses__card__price">40р.</p>
+              </a>
+            </div>
+
+            <div class="courses__container__cards">
+              <div class="courses__card__image">
+                <img src="images/picture02.jpg" alt="2" />
+              </div>
+              <a
+                href="../dogs__training/html/courses/dresirovka_schenkov.html"
+                class="courses__card__info"
+              >
+                <p class="courses__card__text">
+                  Защитно-караульная <span>служба</span>
+                </p>
+                <p class="courses__card__price">50р.</p>
+              </a>
+            </div>
+
+            <div class="courses__container__cards">
+              <div class="courses__card__image">
+                <img src="images/picture03.jpg" alt="3" />
+              </div>
+              <a
+                href="../dogs__training/html/courses/dresirovka_schenkov.html"
+                class="courses__card__info"
+              >
+                <p class="courses__card__text">
+                  Трюковая <span>дрессировка</span>
+                </p>
+                <p class="courses__card__price">50р.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Конец Блок все курсы -->
+
+    <!-- Блок бонусов при покупке курсов -->
+
+    <section class="bonus padding">
+      <div class="container">
+        <div class="bonus__container">
+          <h2 class="h2__title">Бонусы при покупке курса</h2>
+          <a href="../dogs__training/contacts.html" class="shine"
+            >Оставить заявку</a
+          >
+        </div>
+        <div class="bonus__wrapper">
+          <div class="bonus_item">
+            <div class="bonus__wrapper__icon">
+              <img src="images/icons/infinity.png" alt="infinity" />
+            </div>
+
+            <div class="bonus__wrapper__text">
+              Бессрочный доступ к материалам программы: лекциям, пособиям,
+              шаблонам и образцам документов.
+            </div>
+          </div>
+
+          <div class="bonus_item">
+            <div class="bonus__wrapper__icon">
+              <img src="images/icons/library.png" alt="infinity" />
+            </div>
+
+            <div class="bonus__wrapper__text">
+              Доступ к библиотеке (5000+ вебинаров в записи) на время курса и
+              еще 90 дней после окончания.
+            </div>
+          </div>
+
+          <div class="bonus_item">
+            <div class="bonus__wrapper__icon">
+              <img src="images/icons/storage.png" alt="infinity" />
+            </div>
+
+            <div class="bonus__wrapper__text">
+              Доступ ко всем ресурсам университетской электронной библиотеки
+            </div>
+          </div>
+
+          <div class="bonus_item">
+            <div class="bonus__wrapper__icon">
+              <img src="images/icons/certificate.png" alt="infinity" />
+            </div>
+
+            <div class="bonus__wrapper__text">
+              Сертификат за каждый посещенный онлайн-вебинар.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Конец блока бонусов при покупке курсов -->
+
+    <!-- подписаться на рассылку -->
+    <section class="subscribe">
+      <div class="subscribe__container container">
+        <div class="subscribe__wrapper">
+          <h4 class="subscribe__title">
+            Расскажем, как научить собаку чему угодно
+          </h4>
+          <p class="subscribe__text">
+            Присылаем полезные письма и даем промокоды, которых больше нигде не
+            найти. В первом письме пришлем <span>гайд</span> «Как научить собаку
+            чему угодно» и <span>подарим 1000 ₽ на покупку курса</span>.
+          </p>
+          <div class="subscribe__form">
+            <input
+              type="email"
+              class="subscribe__input__email"
+              placeholder="name@example.com"
+              id="subscribe__input_email"
+              minlength="5"
+              maxlength="25"
+              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+              title="Пожалуйста, введите действующий электронный адрес."
+              required
+            />
+
+            <button class="subscribe__input__button" onclick="subscribe()">
+              Подписаться
+            </button>
+          </div>
+          <p class="subscribe__text__agreement">
+            Нажимая на кнопку, вы даете согласие на получение наших писем и
+            соглашаетесь c
+            <a href="html/policy.html" class="subscribe__text__agreement__link"
+              >политикой конфиденциальности</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- подписаться на рассылку -->
+
+    <!-- Блок БЛОГ -->
+    <section class="blog padding">
+      <div class="container blog__container">
+        <div class="blog__info">
+          <div class="blog__title">
+            <h2 class="h2__title">Что-то полезное</h2>
+            <a href="../dogs__training/all_courses.html" class="shine">
+              Блог
+            </a>
+          </div>
+
+          <div class="blog__title__text">
+            <p class="blog__info__text">
+              Дважды в неделю мы пишем что-то полезное. Самое интересное
+              отправляется в
+              <a href="../dogs__training/blog.html" class="blog__link">Блог</a>.
+            </p>
+            <p class="blog__info__text">
+              Чтобы ничего не пропустить, подпишитесь на нас в
+              <a href="https://t.me" class="blog__link">Telegram</a> или
+              <a href="https://vk.com" class="blog__link">ВКонтакте</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog__wrapper">
+          <div class="blog__wrapper__cards">
+            <div class="blog__image">
+              <a href="../dogs__training/html/blog/lay.html">
+                <img
+                  src="images/blog/blog_fat_dog01.jpg"
+                  alt="blog_fat_dog01"
+                />
+              </a>
+            </div>
+
+            <p class="blog__card__date">23 июля 2024</p>
+
+            <a href="../dogs__training/html/blog/lay.html">
+              <h5 class="blog__card__title">Ожирение у собак</h5>
+            </a>
+
+            <p class="blog__card__text">
+              Почему возникает ожирение у собак, как его распознать и лечить,
+              рассказываем в этой статье.
+            </p>
+
+            <a
+              href="../dogs__training/html/blog/lay.html"
+              class="blog__card__link"
+              >Читать далее</a
+            >
+          </div>
+
+          <div class="blog__wrapper__cards">
+            <div class="blog__image">
+              <a href="../dogs__training/html/blog/lay.html">
+                <img src="images/blog/blog_voice01.jpg" alt="blog_fat_dog01" />
+              </a>
+            </div>
+            <p class="blog__card__date">28 июля 2024</p>
+
+            <a href="../dogs__training/html/blog/lay.html">
+              <h5 class="blog__card__title">
+                Как научить собаку команде «Голос»
+              </h5>
+            </a>
+
+            <p class="blog__card__text">
+              В этой статье поговорим об обучении собаки команде «Голос» и
+              методах, которые помогут ее освоить.
+            </p>
+
+            <a
+              href="../dogs__training/html/blog/lay.html#"
+              class="blog__card__link"
+              >Читать далее</a
+            >
+          </div>
+
+          <div class="blog__wrapper__cards">
+            <div class="blog__image">
+              <a href="../dogs__training/html/blog/lay.html">
+                <img src="images/blog/blog_lay02.jpg" alt="blog_fat_dog01" />
+              </a>
+            </div>
+            <p class="blog__card__date">12 августа 2024</p>
+
+            <a href="../dogs__training/html/blog/lay.html">
+              <h5 class="blog__card__title">
+                Как обучить собаку команде «Лежать»
+              </h5>
+            </a>
+
+            <p class="blog__card__text">
+              В статье поговорим о том, как обучить собаку выполнять команду
+              «Лежать» — один из базовых навыков послушания.
+            </p>
+
+            <a
+              href="../dogs__training/html/blog/lay.html"
+              class="blog__card__link"
+              >Читать далее</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Конец блока БЛОГ -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">Курсы</h6>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Обучение щенков</div>
+            </a>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Защитно-караульная служба</div>
+            </a>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Общий курс дрессировки</div>
+            </a>
+            <a href="../dogs__training/html/courses/dresirovka_schenkov.html">
+              <div class="footer__link">Городская собака</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">О нас</h6>
+            <a href="../dogs__training/team.html">
+              <div class="footer__link">Команда</div>
+            </a>
+            <a href="../dogs__training/blog.html">
+              <div class="footer__link">Блог</div>
+            </a>
+            <a href="../dogs__training/contacts.html">
+              <div class="footer__link">Контакты</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">Полезные ссылки</h6>
+            <a href="../dogs__training/policy.html">
+              <div class="footer__link">Политика конфиденциальности</div>
+            </a>
+            <a href="../dogs__training/user_agreement.html">
+              <div class="footer__link">Пользовательское соглашение</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <div class="footer__courses">
+            <h6 class="footer__title">Мы в социальных сетях</h6>
+
+            <a href="https://vk.com">
+              <div class="footer__link footer__soc_media">
+                <div class="footer__soc_media__icon">
+                  <i class="fa-brands fa-vk"></i>
+                </div>
+                <div class="footer__soc_media__text">Вконтакте</div>
+              </div>
+            </a>
+
+            <a href="https://instagram.com" class="">
+              <div class="footer__link footer__soc_media">
+                <div class="footer__soc_media__icon">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div class="footer__soc_media__text">Instagram</div>
+              </div>
+            </a>
+
+            <a href="https://web.telegram.org/">
+              <div class="footer__link footer__soc_media">
+                <div class="footer__soc_media__icon">
+                  <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="footer__soc_media__text">Telegram</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__sign">
+        Copyright &#169; 2024 All rights reserved | This template is made with
+        <i class="fa-solid fa-heart" style="color: #c3ecf0"> </i> by Eugene
+      </div>
+    </footer>
+
+    <!-- Конец блока FOOTER -->
+
+    <script src="js/index.js"></script>
+  </body>
 </html>

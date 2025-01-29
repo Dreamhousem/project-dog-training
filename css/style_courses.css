@@ -1,0 +1,340 @@
+/* Все курсы */
+
+body {
+  margin: 0;
+  background-color: #e7e7e7;
+  font-family: "Roboto", sans-serif;
+}
+
+.block_wrapper {
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+h2 img {
+  width: 100%;
+}
+
+.h1 {
+  font-size: 30px;
+  padding: 25px;
+  background-color: #00695a;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.h1::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #00695a transparent transparent transparent;
+  border-width: 31px 91px 31px 92px;
+  position: absolute;
+  top: 75px;
+}
+
+.vline {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0;
+  margin-top: 30px;
+}
+
+.vline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.cloud {
+  position: relative;
+  padding: 10px 40px;
+  background-color: inherit;
+  width: 50%;
+}
+
+.text {
+  background-color: white;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.left {
+  left: 0;
+}
+
+.left::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+  border-width: 15px 0 15px 15px;
+  top: 12%;
+  right: 25px;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  border-width: 15px 15px 15px 0;
+  top: 12%;
+  left: 25px;
+}
+
+.cloud::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: #00695a 4px solid;
+  position: absolute;
+  border-radius: 100%;
+  top: 11%;
+  right: -21px;
+  z-index: 10;
+}
+
+.right::after {
+  position: absolute;
+  content: "";
+  top: 11%;
+  left: -17px;
+}
+
+@media screen and (max-width: 800px) {
+  .block_wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .h1 {
+    font-size: 30px;
+    padding: 15px;
+    background-color: #00695a;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .h1::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #00695a transparent transparent transparent;
+    border-width: 30px 39px 30px 39px;
+    position: absolute;
+    top: 53px;
+    left: 0px;
+  }
+
+  .vline::after {
+    left: 37px;
+  }
+
+  .right {
+    left: 37px;
+    width: 95%;
+  }
+
+  .left {
+    left: 37px;
+    width: 95%;
+  }
+
+  .left::before {
+    border-color: transparent white transparent transparent;
+    border-width: 15px 15px 15px 0;
+    top: 12%;
+    left: 25px;
+  }
+
+  .cloud::after {
+    top: 11%;
+    left: -17px;
+  }
+
+  .right::after {
+    top: 11%;
+    left: -17px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__wrapper {
+    margin-top: 30px;
+  }
+
+  .footer__title {
+    margin-bottom: 10px;
+  }
+
+  #myBtn {
+    bottom: 10px;
+    right: 10px;
+    font-size: 8px;
+    padding: 10px 14px;
+  }
+}
+
+
+
+/* Конец все курсы*/
+
+.mb40px {
+  margin-bottom: 40px;
+}
+.mb20px {
+  margin-bottom: 20px;
+}
+.mt20px {
+  margin-top: 20px;
+}
+.mt40px {
+  margin-top: 40px;
+}
+
+.courses * {
+  line-height: 1.4;
+}
+
+.courses__title {
+  line-height: 1.6;
+}
+
+.courses__subtitle_text,
+.program__title {
+  font-weight: bold;
+}
+
+.courses__subtitle ~ a {
+  display: inline-block;
+}
+
+.courses__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.courses__info {
+  min-width: 50%;
+}
+
+.courses__title_image,
+.courses__title_image img {
+  border-radius: 25px;
+}
+
+.program__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  min-height: 550px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px #000;
+}
+
+.mb20px > li {
+  margin-bottom: 10px;
+  margin-left: 45px;
+  list-style-image: url(../images/courses/paw-list.png);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.program_video > img {
+  display: inline-block;
+  height: 100%;
+}
+.gif {
+  width: 50%;
+}
+
+#kak_vse_ustroeno {
+  padding: 20px;
+}
+#kak_vse_ustroeno > li {
+  margin-left: 25px;
+}
+
+.kak_ustroeno__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  max-width: 45%;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px #000;
+}
+
+@media screen and (max-width: 800px) {
+  .courses * {
+    line-height: 1.1;
+  }
+  .courses__container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mt40px {
+    margin-top: 20px;
+  }
+
+  .mb40px {
+    margin-bottom: 20px;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .program__container {
+    max-width: none;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .gif {
+    width: 100%;
+  }
+
+  .kak_ustroeno__container {
+    min-height: auto;
+    max-width: none;
+    width: 100%;
+  }
+}
